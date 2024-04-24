@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
 const State2 = () => {
-  const [name, setName] = useState({ firstName: "", lastName: "" });
+  const [name, setName] = useState({ fname: "", lname: "" });
   return (
     <div>
       <input
         type="text"
-        value={name.firstName}
         placeholder="FirstName"
-        onChange={(e) => setName({ ...name, firstName: e.target.value })}
+        value={name.fname}
+        onChange={(e) => setName({ ...name, fname: e.target.value })}
       />
       <input
         type="text"
-        value={name.lastName}
         placeholder="LastName"
-        onChange={(e) => setName({ ...name, lastName: e.target.value })}
+        value={name.lname}
+        onChange={(e) => setName({ ...name, lname: e.target.value })}
       />
-      <h1>{JSON.stringify(name)}</h1>
+      <h3>{JSON.stringify(name)}</h3>
     </div>
   );
 };

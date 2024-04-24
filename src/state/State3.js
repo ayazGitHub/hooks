@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const State3 = () => {
-  const [items, setItems] = useState(["", ""]);
+  const [items, setItems] = useState([]);
   const addItem = () => {
     setItems([
       ...items,
