@@ -1,13 +1,16 @@
-import Test1 from "./practice.js/Test1";
-import Test2 from "./practice.js/Test2";
-import Test3 from "./practice.js/Test3";
-
+import { createContext } from "react";
+import Context4 from "./context/Context4";
+import Context5 from "./context/Context5";
+import Context6 from "./context/Context6";
+export const nameContext = createContext();
 function App() {
   return (
     <div className="App">
-      <Test1 />
-      <Test2 />
-      <Test3 />
+      <nameContext.Provider value={"ayaz"}>
+        <Context4 />
+        <Context5 />
+        <Context6 />
+      </nameContext.Provider>
     </div>
   );
 }
